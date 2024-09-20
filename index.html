@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Dhan Tracker</h2>
+        <hr>
+        <div class="balance">
+            <h4>Your Balance</h4>
+            <p id="balance">₹0.00</p>
+        </div>
+        <div class="income-exponse">
+            <div class="income xyz">
+                <h4>Income</h4>
+                <p class="income-balance pluse" id="pluse"> + ₹0.00</p>
+            </div>
+            <div class="exponse xyz">
+                <h4>Expense</h4>
+                <p class="exponse-balance minus" id="minus"> - ₹0.00</p>
+            </div>
+        </div>
+        <div class="new-transaction">
+            <h4>New Transaction</h4>
+            <div class="input-box">
+                <label for="add">Transaction Name</label>
+                <input type="text" id="transaction-name" placeholder="Transaction Name...">
+            </div>
+            <!-- <div class="dropdown ">
+                <label for="add">Transaction Method</label>
+                <button class="dropbtn" id="transaction-method">Transaction Method</button>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="#">Cash</a>
+                    <a href="#">Card</a>
+                    <a href="#">UPI</a>
+                    <a href="#">Other</a>
+                </div>
+            </div> -->
+            <div class="input-box">
+                <label for="add">Amouont <br> <span class="symbol-check">(Negative - Expense , Positive -
+                        income)</span></label>
+                <input type="text" id="transaction-amount" placeholder="Enter amount...">
+            </div>
+
+        </div>
+        <button class="transactionBtn" id="add">Add Transaction</button>
+        <hr>
+        <h3>History</h3>
+        <ul id="transaction-list" class="list">
+
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
